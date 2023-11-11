@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUESS THE NUMBER </title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" id="house">HOME</a>
+    </nav>
+<center>
+    <h2 id="h">GUES THE NUMBER NANBARGALEY!!!</h2>
+
+    <input id="box">
+
+    <button id="btn" onclick="check()">GUESS</button>
+
+    <p id="result"> RIGHT || WRONG</p>
+
+    <p id="scr">score:10</p>
+
+</center>
+    
+<style>
+body{
+
+    background-color: rgb(58, 128, 0);
+
+}
+
+#box{
+    border: 2px solid black;
+}
+#btn{
+    border: 2px solid black;
+}
+
+
+
+</style>
+
+    
+<script>
+var totalscore=10
+let a = document.getElementById("box")
+let b = document.getElementById("result")
+// let c = document.getElementById("btn")
+//  guessednumber.value = a.value
+let scr =document.getElementById("scr")
+ let randomnumber  = Math.floor(Math.random()*10)
+
+function check()
+{
+    var enternumber = a.value
+    if(randomnumber == enternumber)
+    {
+        // console.log("Right")
+        result.textContent ="Right"
+        alert("Jaichita Mara")
+    } 
+    else if(totalscore == 0)
+    {
+        alert("Game over nanba!!")
+    }
+    else
+    {
+        totalscore=totalscore-1
+        scr.textContent="score:"+totalscore
+        result.textContent ="Wrong"
+        // console.log("Wrong")
+    }
+}
+
+</script>
+
+
+</body>
+</html>

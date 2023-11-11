@@ -1,0 +1,48 @@
+<nav id="naviga">
+    <a href="Login.html">Previous</a>
+    <a href="game.html">Next</a>
+</nav>
+
+<form action="game.html">
+
+    <div class="container">
+
+        <input type="text" placeholder="First name "  id="fname"  required><br>
+        <input type="text" placeholder="Second name " id="sname"    required><br>
+        <input type="date" placeholder="DOB" required><br>
+        
+        
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">male</label>
+        
+        <input type="radio" name="gender" id="female" required>
+        <label for="female">female</label>  <br>
+    
+    <input type="email" name="mail" id="mailid"  placeholder="your mail"> <br>
+    
+    <button  type="submit" class="container" >Create & Go</button>
+    </div>
+   
+</form>
+
+
+
+<style>
+    body{
+        background-color:teal;
+    }
+    .container{
+        text-align: center;
+        margin: 25px;
+    }
+    .container input{
+        margin: 5px;
+        border: 1px solid yellow;
+    }
+    .container button{
+        border: 1px solid yellow;
+    }
+   #naviga{
+    text-align: end;
+   }
+</style>
